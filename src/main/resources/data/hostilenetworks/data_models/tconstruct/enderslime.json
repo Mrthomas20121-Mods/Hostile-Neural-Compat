@@ -1,5 +1,5 @@
 {
-	"type": "tconstruct:enderslime",
+	"type": "tconstruct:ender_slime",
 	"name": "entity.tconstruct.enderslime",
 	"name_color": "0xD07BFC",
 	"gui_scale": 1,

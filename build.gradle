@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        maven { url = 'https://files.minecraftforge.net/maven' }
+        maven { url = 'https://maven.minecraftforge.net/' }
         mavenCentral()
         maven {
             name = "sonatype"
@@ -89,10 +89,6 @@ dependencies {
 
 repositories {
     mavenLocal()
-    maven { // Forge
-        name 'ForgeFS'
-        url 'https://files.minecraftforge.net/maven'
-    }
     maven { // JEI
         name 'Prog Maven'
         url 'https://dvs1.progwml6.com/files/maven'
@@ -105,25 +101,23 @@ repositories {
         name 'crafttweaker and jei'
         url 'https://maven.blamejared.com'
     }
-}
-
-ext.artifact_version = 'NFG'
-if (System.getenv().ARTIFACT_VERSION == null) {
-    artifact_version = "${hostile_neural_compat_version}"
-}
-if (System.getenv().ARTIFACT_VERSION != null) {
-    artifact_version = "${system.getenv().ARTIFACT_VERSION}"
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
 jar {
     manifest {
         attributes([
-            "Specification-Title": "BlockEffect",
+            "Specification-Title": "HostileNeuralCompat",
             "Specification-Vendor": "Mrthomas20121",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
-            "Implementation-Version": "${getArchiveVersion()}",
-            "Implementation-Vendor" :"hostile_neural_compat",
+            "Implementation-Version": project.version,
+            "Implementation-Vendor" : "hostile_neural_compat",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

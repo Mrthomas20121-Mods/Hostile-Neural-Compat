@@ -1,5 +1,6 @@
 package mrthomas20121.hostile_neural_compat;
 
+import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
