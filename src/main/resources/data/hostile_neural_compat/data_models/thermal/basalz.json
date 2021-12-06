@@ -1,7 +1,7 @@
 {
-	"type": "thermal:blitz",
-	"name": "entity.thermal.blitz",
-	"name_color": "0xE6EAF0",
+	"type": "thermal:basalz",
+	"name": "entity.thermal.basalz",
+	"name_color": "0x4E5157",
 	"gui_scale": 1,
 	"gui_x_offset": 0,
 	"gui_y_offset": 0,
@@ -13,10 +13,10 @@
 	"base_drop": {
 		"item": "hostilenetworks:overworld_prediction"
 	},
-	"trivia": "hostilenetworks.trivia.blitz",
+	"trivia": "hostile_neural_compat.trivia.basalz",
 	"fabricator_drops": [
 		{
-			"item": "thermal:blitz_rod",
+			"item": "thermal:basalz_rod",
 			"count": 1
 		}
 	]

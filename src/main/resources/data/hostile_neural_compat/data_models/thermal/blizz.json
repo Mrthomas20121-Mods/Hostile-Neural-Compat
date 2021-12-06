@@ -13,7 +13,7 @@
 	"base_drop": {
 		"item": "hostilenetworks:overworld_prediction"
 	},
-	"trivia": "hostilenetworks.trivia.blizz",
+	"trivia": "hostile_neural_compat.trivia.blizz",
 	"fabricator_drops": [
 		{
 			"item": "thermal:blizz_rod",
