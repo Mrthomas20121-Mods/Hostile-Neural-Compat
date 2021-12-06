@@ -19,7 +19,7 @@ apply plugin: 'eclipse'
 
 version = hostile_neural_compat_version
 group = 'mrthomas20121.hostile_neural_compat'
-archivesBaseName = 'hostile_neural_compat'
+archivesBaseName = 'Hostile Neural Compat'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
