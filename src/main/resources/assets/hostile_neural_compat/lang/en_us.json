@@ -1,4 +1,7 @@
 {
+  "itemGroup.hostile_neural_compat": "Hostile Neural Compat",
+  "item.hostile_neural_compat.twilight_prediction": "Generalized Twilight Prediction",
+  "item.hostile_neural_compat.sandy_prediction": "Generalized Sandy Prediction",
   "hostile_neural_compat.trivia.sky_slime": "Squish and Bounce on player flying by.",
   "hostile_neural_compat.trivia.ender_slime": "Squish and Bounce on player flying by.",
   "hostile_neural_compat.trivia.terracube": "Cute little clay cube.",
