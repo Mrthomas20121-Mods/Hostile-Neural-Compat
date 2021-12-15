@@ -1,0 +1,26 @@
+{
+  "mod_id": "atum",
+  "data_model": {
+    "type": "atum:desert_wolf",
+    "name": "entity.atum.desert_wolf",
+    "name_color": "0xDEC497",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 80,
+    "input": {
+      "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+      "item": "hostile_neural_compat:sandy_prediction"
+    },
+    "trivia": "hostile_neural_compat.trivia.desert_wolf",
+    "fabricator_drops": [
+      {
+        "item": "atum:wolf_pelt",
+        "count": 3
+      }
+    ]
+  }
+}
