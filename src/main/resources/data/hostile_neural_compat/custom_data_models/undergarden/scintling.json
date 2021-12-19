@@ -1,0 +1,26 @@
+{
+  "mod_id": "undergarden",
+  "data_model": {
+    "type": "undergarden:scintling",
+    "name": "entity.undergarden.scintling",
+    "name_color": "0xFFFFFF",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 80,
+    "input": {
+      "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+      "item": "hostile_neural_compat:forgotten_prediction"
+    },
+    "trivia": "hostile_neural_compat.trivia.scintling",
+    "fabricator_drops": [
+      {
+        "item": "undergarden:goo_ball",
+        "count": 4
+      }
+    ]
+  }
+}

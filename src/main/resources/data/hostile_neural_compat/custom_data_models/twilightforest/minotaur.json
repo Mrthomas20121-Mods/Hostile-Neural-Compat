@@ -18,8 +18,12 @@
     "trivia": "hostile_neural_compat.trivia.minotaur",
     "fabricator_drops": [
       {
-        "item": "twilightforest:naga_scale",
-        "count": 13
+        "item": "twilightforest:raw_meef",
+        "count": 2
+      },
+      {
+        "item": "twilightforest:maze_map_focus",
+        "count": 1
       }
     ]
   }

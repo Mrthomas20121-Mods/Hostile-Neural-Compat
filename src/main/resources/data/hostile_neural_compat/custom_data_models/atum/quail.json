@@ -1,8 +1,8 @@
 {
   "mod_id": "atum",
   "data_model": {
-    "type": "atum:bonestorm",
-    "name": "entity.atum.bonestorm",
+    "type": "atum:quail",
+    "name": "entity.atum.quail",
     "name_color": "0xDEC497",
     "gui_scale": 1,
     "gui_x_offset": 0,
@@ -15,11 +15,15 @@
     "base_drop": {
       "item": "hostile_neural_compat:sandy_prediction"
     },
-    "trivia": "hostile_neural_compat.trivia.bonestorm",
+    "trivia": "hostile_neural_compat.trivia.quail",
     "fabricator_drops": [
       {
-        "item": "atum:dusty_bone",
-        "count": 10
+        "item": "minecraft:feather",
+        "count": 2
+      },
+      {
+        "item": "atum:quail",
+        "count": 1
       }
     ]
   }

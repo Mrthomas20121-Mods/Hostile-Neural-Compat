@@ -1,9 +1,9 @@
 {
-  "mod_id": "atum",
+  "mod_id": "mysticalworld",
   "data_model": {
-    "type": "atum:bonestorm",
-    "name": "entity.atum.bonestorm",
-    "name_color": "0xDEC497",
+    "type": "mysticalworld:silver_fox",
+    "name": "entity.mysticalworld.silver_fox",
+    "name_color": "0xFFFFFF",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
@@ -13,12 +13,12 @@
       "item": "hostilenetworks:empty_prediction"
     },
     "base_drop": {
-      "item": "hostile_neural_compat:sandy_prediction"
+      "item": "hostilenetworks:overworld_prediction"
     },
-    "trivia": "hostile_neural_compat.trivia.bonestorm",
+    "trivia": "hostile_neural_compat.trivia.silver_fox",
     "fabricator_drops": [
       {
-        "item": "atum:dusty_bone",
+        "item": "mysticalworld:pelt",
         "count": 10
       }
     ]

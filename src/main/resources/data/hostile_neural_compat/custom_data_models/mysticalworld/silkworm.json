@@ -1,0 +1,26 @@
+{
+  "mod_id": "mysticalworld",
+  "data_model": {
+    "type": "mysticalworld:silkworm",
+    "name": "entity.mysticalworld.silkworm",
+    "name_color": "0xFFFFFF",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 80,
+    "input": {
+      "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+      "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostile_neural_compat.trivia.silkworm",
+    "fabricator_drops": [
+      {
+        "item": "mysticalworld:silkworm_egg",
+        "count": 2
+      }
+    ]
+  }
+}

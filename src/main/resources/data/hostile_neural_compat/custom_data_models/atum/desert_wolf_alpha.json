@@ -1,8 +1,8 @@
 {
   "mod_id": "atum",
   "data_model": {
-    "type": "atum:bonestorm",
-    "name": "entity.atum.bonestorm",
+    "type": "atum:desert_wolf_alpha",
+    "name": "entity.atum.desert_wolf_alpha",
     "name_color": "0xDEC497",
     "gui_scale": 1,
     "gui_x_offset": 0,
@@ -15,11 +15,11 @@
     "base_drop": {
       "item": "hostile_neural_compat:sandy_prediction"
     },
-    "trivia": "hostile_neural_compat.trivia.bonestorm",
+    "trivia": "hostile_neural_compat.trivia.desert_wolf_alpha",
     "fabricator_drops": [
       {
-        "item": "atum:dusty_bone",
-        "count": 10
+        "item": "atum:wolf_pelt",
+        "count": 3
       }
     ]
   }

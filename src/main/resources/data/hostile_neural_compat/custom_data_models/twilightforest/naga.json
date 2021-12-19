@@ -1,8 +1,8 @@
 {
   "mod_id": "twilightforest",
   "data_model": {
-    "type": "twilightforest:skeleton_druid",
-    "name": "entity.twilightforest.skeleton_druid",
+    "type": "twilightforest:naga",
+    "name": "entity.twilightforest.naga",
     "name_color": "0x2A955F",
     "gui_scale": 1,
     "gui_x_offset": 0,
@@ -15,15 +15,11 @@
     "base_drop": {
       "item": "hostile_neural_compat:twilight_prediction"
     },
-    "trivia": "hostile_neural_compat.trivia.skeleton_druid",
+    "trivia": "hostile_neural_compat.trivia.naga",
     "fabricator_drops": [
       {
-        "item": "minecraft:bone",
-        "count": 24
-      },
-      {
-        "item": "twilightforest:torchberries",
-        "count": 3
+        "item": "twilightforest:naga_scale",
+        "count": 13
       }
     ]
   }
