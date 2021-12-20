@@ -3,7 +3,7 @@
   "data_model": {
     "type": "undergarden:muncher",
     "name": "entity.undergarden.muncher",
-    "name_color": "0xFFFFFF",
+    "name_color": "0x3E3829",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,

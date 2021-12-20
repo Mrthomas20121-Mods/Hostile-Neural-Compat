@@ -3,8 +3,8 @@
   "data_model": {
     "type": "undergarden:brute",
     "name": "entity.undergarden.brute",
-    "name_color": "0xFFFFFF",
-    "gui_scale": 1,
+    "name_color": "0x3E3829",
+    "gui_scale": 0.9,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,

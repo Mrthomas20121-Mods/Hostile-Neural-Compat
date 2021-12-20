@@ -4,7 +4,7 @@
     "type": "twilightforest:hydra",
     "name": "entity.twilightforest.hydra",
     "name_color": "0x2A955F",
-    "gui_scale": 0.4,
+    "gui_scale": 0.3,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,

@@ -3,7 +3,7 @@
   "data_model": {
     "type": "mysticalworld:duck",
     "name": "entity.mysticalworld.duck",
-    "name_color": "0xFFFFFF",
+    "name_color": "0xF5F5CD",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
