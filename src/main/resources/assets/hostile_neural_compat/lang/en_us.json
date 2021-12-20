@@ -2,6 +2,7 @@
   "itemGroup.hostile_neural_compat": "Hostile Neural Compat",
   "item.hostile_neural_compat.twilight_prediction": "Generalized Twilight Prediction",
   "item.hostile_neural_compat.sandy_prediction": "Generalized Sandy Prediction",
+  "item.hostile_neural_compat.forgotten_prediction": "Generalized Forgotten Prediction",
   "hostile_neural_compat.trivia.assassin": "Careful, they might backstab you.",
   "hostile_neural_compat.trivia.barbarian": "A little too barbaric.",
   "hostile_neural_compat.trivia.brigand": "Some say they are a living zombie.",
