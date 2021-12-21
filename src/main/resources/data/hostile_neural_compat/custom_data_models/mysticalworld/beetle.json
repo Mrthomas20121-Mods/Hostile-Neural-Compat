@@ -18,7 +18,7 @@
     "trivia": "hostile_neural_compat.trivia.beetle",
     "fabricator_drops": [
       {
-        "item": "minecraft:slimeball",
+        "item": "minecraft:slime_ball",
         "count": 12
       },
       {
