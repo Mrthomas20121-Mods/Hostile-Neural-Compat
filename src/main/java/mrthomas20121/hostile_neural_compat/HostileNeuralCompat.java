@@ -9,7 +9,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod(HostileNeuralCompat.MOD_ID)
-@Mod.EventBusSubscriber(modid = HostileNeuralCompat.MOD_ID)
 public class HostileNeuralCompat {
 
 	public static final String MOD_ID = "hostile_neural_compat";
@@ -17,10 +16,5 @@ public class HostileNeuralCompat {
 
 	public HostileNeuralCompat() {
 		ItemRegistry.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-	}
-
-	@SubscribeEvent
-	public static void reloads(AddReloadListenerEvent e) {
-		e.addListener(CustomDataModelManager.INSTANCE);
 	}
 }
