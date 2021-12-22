@@ -81,9 +81,11 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
     def mc = minecraft "net.minecraftforge:forge:1.16.5-${forge_version}"
-    implementation fg.deobf("mezz.jei:jei-1.16.4:7.6.1.65")
-    implementation fg.deobf("curse.maven:hostile-neural-networks-552574:3567053")
+    implementation fg.deobf("mezz.jei:jei-1.16.5:7.7.1.121")
+    implementation fg.deobf("curse.maven:hostile-neural-networks-552574:3576150")
     implementation fg.deobf("curse.maven:placebo-283644:3536806")
+    implementation fg.deobf("curse.maven:atum-59621:3543926")
+    implementation fg.deobf("curse.maven:curios-309927:3456953")
     annotationProcessor 'com.google.code.gson:gson:2.8.6'
     annotationProcessor 'org.reflections:reflections:0.9.10'
     annotationProcessor mc
