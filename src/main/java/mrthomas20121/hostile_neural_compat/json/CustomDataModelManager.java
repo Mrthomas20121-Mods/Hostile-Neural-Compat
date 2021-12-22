@@ -33,20 +33,26 @@ public class CustomDataModelManager extends JsonReloadListener {
 
     @Override
     protected void apply(Map<ResourceLocation, JsonElement> pObject, @Nonnull IResourceManager pResourceManager, @Nonnull IProfiler pProfiler) {
-        pObject.forEach((loc, ele) -> {
+        for(Map.Entry<ResourceLocation, JsonElement> entry: pObject.entrySet()) {
+            ResourceLocation loc = entry.getKey();
+            JsonElement ele = entry.getValue();
             try {
                 JsonObject object = ele.getAsJsonObject();
-                if (object.entrySet().isEmpty()) return; //Ignore empty files so people can delete models.
+                if (object.entrySet().isEmpty() && !object.has("mod_id")) continue; //Ignore empty files so people can delete models.
                 String mod_id = object.get("mod_id").getAsString();
-                if(ModList.get().isLoaded(mod_id)) {
-                    DataModel model = GSON.fromJson(object.get("data_model"), DataModel.class);
-                    model.setId(loc);
-                    DataModelManager.INSTANCE.register(model);
+                if(!ModList.get().isLoaded(mod_id)) {
+                    HostileNeuralCompat.LOGGER.warn("Skipping data model {}, {} is not loaded.", loc, mod_id);
+                    continue;
                 }
+                DataModel model = GSON.fromJson(object.get("data_model"), DataModel.class);
+                model.setId(loc);
+                DataModelManager.INSTANCE.register(model);
+                HostileNeuralCompat.LOGGER.info("Loading model {}", model.getId().toString());
+
             } catch (JsonParseException ex) {
                 HostileNeuralCompat.LOGGER.error("Failed to load data model {}.", loc);
                 ex.printStackTrace();
             }
-        });
+        }
     }
 }
