@@ -1,8 +1,8 @@
 {
   "mod_id": "iceandfire",
   "data_model": {
-    "type": "iceandfire:hippogryph",
-    "name": "entity.iceandfire.hippogryph",
+    "type": "iceandfire:amphithere",
+    "name": "entity.iceandfire.amphithere",
     "name_color": "0xFFFFFF",
     "gui_scale": 1,
     "gui_x_offset": 0,
@@ -15,7 +15,7 @@
     "base_drop": {
       "item": "hostilenetworks:overworld_prediction"
     },
-    "trivia": "hostile_neural_compat.trivia.hippogryph",
+    "trivia": "hostile_neural_compat.trivia.amphithere",
     "fabricator_drops": [
       {
         "item": "iceandfire:amphithere_skull",
