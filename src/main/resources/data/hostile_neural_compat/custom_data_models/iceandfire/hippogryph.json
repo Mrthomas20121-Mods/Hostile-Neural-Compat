@@ -18,10 +18,6 @@
     "trivia": "hostile_neural_compat.trivia.hippogryph",
     "fabricator_drops": [
       {
-        "item": "iceandfire:hippogryph_skull",
-        "count": 1
-      },
-      {
         "item": "iceandfire:hippogryph_talon",
         "count": 1
       },
