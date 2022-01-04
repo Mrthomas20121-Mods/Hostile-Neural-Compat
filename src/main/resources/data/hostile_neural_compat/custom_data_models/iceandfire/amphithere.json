@@ -17,10 +17,7 @@
     },
     "trivia": "hostile_neural_compat.trivia.amphithere",
     "fabricator_drops": [
-      {
-        "item": "iceandfire:amphithere_skull",
-        "count": 1
-      },
+     
       {
         "item": "iceandfire:amphithere_feather",
         "count": 24
