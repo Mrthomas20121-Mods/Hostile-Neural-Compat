@@ -1,0 +1,27 @@
+{
+  "mod_id": "iceandfire",
+  "data_model": {
+    "type": "iceandfire:amphithere",
+    "name": "entity.iceandfire.amphithere",
+    "name_color": "0xFFFFFF",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 100,
+    "input": {
+      "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+      "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostile_neural_compat.trivia.amphithere",
+    "fabricator_drops": [
+     
+      {
+        "item": "iceandfire:amphithere_feather",
+        "count": 24
+      }
+    ]
+  }
+}

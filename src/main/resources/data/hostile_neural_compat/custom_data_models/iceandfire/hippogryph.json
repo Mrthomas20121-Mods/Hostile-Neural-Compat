@@ -1,33 +1,33 @@
 {
-  "mod_id": "savageandravage",
+  "mod_id": "iceandfire",
   "data_model": {
-    "type": "savageandravage:trickster",
-    "name": "entity.savageandravage.trickster",
+    "type": "iceandfire:hippogryph",
+    "name": "entity.iceandfire.hippogryph",
     "name_color": "0xFFFFFF",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 80,
+    "sim_cost": 160,
     "input": {
       "item": "hostilenetworks:empty_prediction"
     },
     "base_drop": {
       "item": "hostilenetworks:overworld_prediction"
     },
-    "trivia": "hostile_neural_compat.trivia.trickster",
+    "trivia": "hostile_neural_compat.trivia.hippogryph",
     "fabricator_drops": [
       {
-        "item": "minecraft:totem_of_undying",
+        "item": "iceandfire:hippogryph_talon",
         "count": 1
       },
       {
-        "item": "savageandravage:mask_of_dishonesty",
-        "count": 1
+        "item": "minecraft:leather",
+        "count": 8
       },
       {
-        "item": "minecraft:emerald",
-        "count": 1
+        "item": "minecraft:feather",
+        "count": 8
       }
     ]
   }
