@@ -29,7 +29,8 @@ minecraft {
     runs {
         client {
             workingDirectory project.file('run')
-            jvmArgs "-Dmixin.env.disableRefMap=true"
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
             property 'forge.logging.markers', 'REGISTRIES'
 
@@ -82,10 +83,19 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 dependencies {
     def mc = minecraft "net.minecraftforge:forge:1.16.5-${forge_version}"
     implementation fg.deobf("mezz.jei:jei-1.16.5:7.7.1.121")
-    implementation fg.deobf("curse.maven:hostile-neural-networks-552574:3576150")
+    implementation fg.deobf("com.legacy:structure-gel:1.16.5-1.7.8")
     implementation fg.deobf("curse.maven:placebo-283644:3536806")
-    implementation fg.deobf("curse.maven:atum-59621:3543926")
-    implementation fg.deobf("curse.maven:curios-309927:3456953")
+    implementation fg.deobf("curse.maven:hostile-neural-networks-${hostile_id}:${hostile_version}")
+    implementation fg.deobf("curse.maven:atum-${atum_id}:${atum_version}")
+    implementation fg.deobf("curse.maven:ice-and-fire-dragons-${ice_and_fire_id}:${ice_and_fire_version}")
+    implementation fg.deobf("curse.maven:mystical-world-${mystical_id}:${mystical_version}")
+    implementation fg.deobf("curse.maven:the-undergarden-${undergarden_id}:${undergarden_version}")
+    implementation fg.deobf("curse.maven:the-twilight-forest-${twilight_id}:${twilight_version}")
+    implementation fg.deobf("curse.maven:blue-skies-${blue_id}:${blue_version}")
+    implementation fg.deobf("vazkii.patchouli:Patchouli:1.16.4-53.2")
+    implementation fg.deobf("curse.maven:citadel-331936:3441030")
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.16.5-4.0.5.3:api")
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.16.5-4.0.5.3")
     annotationProcessor 'com.google.code.gson:gson:2.8.6'
     annotationProcessor 'org.reflections:reflections:0.9.10'
     annotationProcessor mc
@@ -96,6 +106,9 @@ repositories {
     maven { // JEI
         name 'Prog Maven'
         url 'https://dvs1.progwml6.com/files/maven'
+    }
+    maven {
+        url = "https://maven.theillusivec4.top/"
     }
 	maven {
 		name 'Industrial Foregoing'
@@ -110,6 +123,10 @@ repositories {
         content {
             includeGroup "curse.maven"
         }
+    }
+    maven {
+        name = "Modding Legacy Maven"
+        url = "https://maven.moddinglegacy.com/artifactory/modding-legacy/"
     }
 }
 
