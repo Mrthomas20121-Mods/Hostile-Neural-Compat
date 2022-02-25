@@ -1,0 +1,26 @@
+{
+  "mod_id": "blue_skies",
+  "data_model": {
+    "type": "blue_skies:firefly",
+    "name": "entity.blue_skies.firefly",
+    "name_color": "0xFFFFFF",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 80,
+    "input": {
+      "item": "hostilenetworks:empty_prediction"
+    },
+    "base_drop": {
+      "item": "hostile_neural_compat:ever_prediction"
+    },
+    "trivia": "hostile_neural_compat.trivia.firefly",
+    "fabricator_drops": [
+      {
+        "item": "minecraft:glowstone_dust",
+        "count": 8
+      }
+    ]
+  }
+}

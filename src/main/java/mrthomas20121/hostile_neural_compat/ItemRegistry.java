@@ -26,6 +26,7 @@ public class ItemRegistry {
     public static final RegistryObject<Item> sandy_prediction = ITEMS.register("sandy_prediction", ItemRegistry::register);
     public static final RegistryObject<Item> twilight_prediction = ITEMS.register("twilight_prediction", ItemRegistry::register);
     public static final RegistryObject<Item> forgotten_prediction = ITEMS.register("forgotten_prediction", ItemRegistry::register);
+    public static final RegistryObject<Item> ever_prediction = ITEMS.register("ever_prediction", ItemRegistry::register);
 
     public static Item register() {
         return new Item(new Item.Properties().tab(group));
